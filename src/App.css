@@ -40,6 +40,10 @@
   margin: 0;
 }
 
+.App-headers h3 {
+  text-align: right;
+}
+
 .add-movies {
   text-align: center;
 }
@@ -53,6 +57,7 @@
 .movie {
   padding: 5px 25px 10px 25px;
   max-width: 25%;
+  text-align: center;
 }
 
 .errorMessage {

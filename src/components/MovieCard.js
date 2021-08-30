@@ -1,4 +1,5 @@
 import React from "react";
+import Votes from "./Votes";
 
 const DEFAULT_PLACEHOLDER_IMAGE =
   "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg";
@@ -10,6 +11,7 @@ const Movie = ({ movie }) => {
   return (
     <div className="movie">
       <h2>{movie.Title}</h2>
+      <h3><Votes/></h3>
       <div>
         <img
           width="200"
@@ -18,6 +20,7 @@ const Movie = ({ movie }) => {
         />
       </div>
       <p>({movie.Year})</p>
+      <p>({movie.Type})</p>
     </div>
   );
 };
