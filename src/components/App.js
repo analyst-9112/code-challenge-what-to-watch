@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect } from "react";
 import "../App.css";
 import Header from "./Header";
-import Movie from "./MovieCard";
+import MovieCard from "./MovieCard";
 import Search from "./Search";
 
 
@@ -94,7 +94,7 @@ const App = () => {
           <div className="errorMessage">{errorMessage}</div>
         ) : (
           movies.map((movie, index) => (
-            <Movie key={`${index}-${movie.Title}`} movie={movie} />
+            <MovieCard key={`${index}-${movie.Title}`} movie={movie} />
           ))
         )}
       </div>
